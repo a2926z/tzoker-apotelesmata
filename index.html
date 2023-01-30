@@ -10,7 +10,25 @@
 
 <body>
 
-    <!-- Originally posted at https://mypythonjourney-ingreek.blogspot.com/2021/02/blog-post_470.html  -->
+    <h1>COUNTS</h1>
+    <div id="counter">
+        <!-- counts -->
+    </div>
+  
+    <script>
+        let counts=setInterval(updated);
+        let upto=0;
+        function updated(){
+            var count= document.getElementById("counter");
+            count.innerHTML=++upto;
+            if(upto===1000)
+            {
+                clearInterval(counts);
+            }
+        }
+    </script>
+
+    <!-- Originally posted at https://mypythonjourney-ingreek.blogspot.com/2021/03/blog-post.html  -->
 
     <div class="apotel">
         <p> 2476 1 13 15 37 40 12 11/3/2021 2257</p>
